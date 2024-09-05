@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+  --main-color: rgb(101, 91, 83);
+  --max-width: 1200px;
+}
+body {
+  font-family: "Marcellus", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* try to use other boxes later */
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Marcellus", serif;
+  background-image: url("src/blue.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* try row */
+  max-width: var(--max-width);
+  margin: auto;
+}
