@@ -91,6 +91,22 @@ nav {
     align-items: center;
     gap: 2rem;
   } 
+
+  .section_part h2 {
+    font-size: 3.5rem;
+  }
+  .section_part h1 {
+    font-size: 9rem;
+  }
+}
+
+@media (width > 500) {
+  .navigations h2 {
+    font-size: 2rem;
+  }
+  .navigations h1 {
+    font-size: 6rem;
+  }
 }
 
 .section_part {
@@ -101,18 +117,17 @@ nav {
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .section_part h2 {
   margin-bottom: 0rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: white;
 }
 .section_part h1 {
   margin-bottom: 10rem;
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: 500;
   color: white;
 }
@@ -125,10 +140,31 @@ nav {
 .section_part button{
   box-shadow: 0 0 0px white,
   0 0 25px white;
+  font-family: "Marcellus", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  height: 3rem;
+  width: 15rem;
+  /* max-width: fit-content; */
   border: none;
   border-style: none;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 50px;
+  display:flexbox;
+  background-color: #fdfeff7f;
+  outline: none
+}
+
+.section_part button {
+  position: relative;
+  bottom: 10rem;
+  left: 34rem
+  justify-content: ;
+}
+.section_part button {
+  margin:left; 
+  color: rgba(255, 255, 255, 0.945);
+  border-color: white;
 }
 
 .section_part button:hover {
