@@ -13,6 +13,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   /* try to use other boxes later */
+  outline: 4px solid red !important;
+  /* delete it later */
 }
 
 body {
@@ -47,10 +49,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  /* background: rgba(255, 255, 255, 0.564);
-  padding-right: 15px;
-  padding-left: 15px; 
-  padding-top: 10; */
 }
 
 .navigations > div li:not(:first-child) {
@@ -92,21 +90,12 @@ nav {
     gap: 2rem;
   } 
 
-  .section_part h2 {
+  /* .section_part h2 {
     font-size: 3.5rem;
   }
   .section_part h1 {
     font-size: 9rem;
-  }
-}
-
-@media (width > 500) {
-  .navigations h2 {
-    font-size: 2rem;
-  }
-  .navigations h1 {
-    font-size: 6rem;
-  }
+  } */
 }
 
 .section_part {
@@ -117,6 +106,7 @@ nav {
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
+  border: 10px solid rgb(2, 255, 2);
 }
 
 .section_part h2 {
@@ -125,6 +115,7 @@ nav {
   font-weight: bold;
   color: white;
 }
+
 .section_part h1 {
   margin-bottom: 10rem;
   font-size: 9rem;
@@ -135,14 +126,16 @@ nav {
 .section_part h1 {
   -webkit-text-fill-color:transparent;
   -webkit-text-stroke: 2.5px rgb(255, 255, 255);
+  text-shadow:rgba(207, 207, 203, 0.627) 6px 0px;;
 }
 
 .section_part button{
   box-shadow: 0 0 0px white,
-  0 0 25px white;
+  0 0 2px white;
   font-family: "Marcellus", serif;
   font-size: 2.5rem;
   text-align: center;
+  /* display: flex; */
   height: 3rem;
   width: 15rem;
   /* max-width: fit-content; */
@@ -150,16 +143,15 @@ nav {
   border-style: none;
   cursor: pointer;
   border-radius: 50px;
-  display:flexbox;
-  background-color: #fdfeff7f;
-  outline: none
+  background-color: #fdfeff5f;
+  /* outline: none */
 }
 
 .section_part button {
   position: relative;
-  bottom: 10rem;
-  left: 34rem
-  justify-content: ;
+  -webkit-text-fill-color: rgb(111, 111, 111);
+  /* bottom: 9rem;
+  left: 34rem */
 }
 .section_part button {
   margin:left; 
