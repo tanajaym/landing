@@ -12,15 +12,13 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* try to use other boxes later */
-  outline: 4px solid red !important;
-  /* delete it later */
+  /* outline: 4px solid red !important; */
 }
 
 body {
   min-height: 100vh;
   font-family: "Marcellus", serif;
-  background-image: url("src/blue.jpg");
+  background-image: url("src/blue_one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,18 +97,22 @@ nav {
 }
 
 .section_part {
-  flex: 1;
+  /* flex: 1;
+  max-width: var(--max-width);
   width: 100%;
   position: relative;
   isolation: isolate;
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
-  border: 10px solid rgb(2, 255, 2);
+  justify-content: center;
+  border: 10px solid rgb(2, 255, 2); */
+
+
 }
 
 .section_part h2 {
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
   font-size: 3.5rem;
   font-weight: bold;
   color: white;
@@ -125,7 +127,7 @@ nav {
 
 .section_part h1 {
   -webkit-text-fill-color:transparent;
-  -webkit-text-stroke: 2.5px rgb(255, 255, 255);
+  -webkit-text-stroke: 2.5px rgb(111, 111, 111);
   text-shadow:rgba(207, 207, 203, 0.627) 6px 0px;;
 }
 
@@ -135,7 +137,7 @@ nav {
   font-family: "Marcellus", serif;
   font-size: 2.5rem;
   text-align: center;
-  /* display: flex; */
+  gap: 1rem;
   height: 3rem;
   width: 15rem;
   /* max-width: fit-content; */
@@ -143,18 +145,18 @@ nav {
   border-style: none;
   cursor: pointer;
   border-radius: 50px;
-  background-color: #fdfeff5f;
+  background-color: rgba(253, 254, 255, 0.373);
   /* outline: none */
 }
 
 .section_part button {
-  position: relative;
+  position:relative;
   -webkit-text-fill-color: rgb(111, 111, 111);
   /* bottom: 9rem;
   left: 34rem */
 }
 .section_part button {
-  margin:left; 
+  margin: auto; 
   color: rgba(255, 255, 255, 0.945);
   border-color: white;
 }
