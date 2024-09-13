@@ -76,6 +76,9 @@ nav {
 .navigations a:hover::before {
   width: 100%;
 }
+.menuButton {
+  display: none;
+}
 
 @media (width > 800px) {
   .navigations > div li:not(:first-child) {
@@ -86,22 +89,24 @@ nav {
     align-items: center;
     gap: 2rem;
   } 
-  /* .section_part h2 {
-    font-size: 3.5rem;
+  .menu-button{
+    display: none;
   }
-  .section_part h1 {
-    font-size: 9rem;
-  } */
 }
+
 @media (max-width: 800px) {
   .hideOnMobile{
     display: none;
   }
 }
 
+
 @media (max-width: 400px) {
   .sidebar{
     width: 100%;
+  }
+  .menu-button{
+    display: block;
   }
 }
 
@@ -115,10 +120,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 10px solid rgb(2, 255, 2);  */
-  
-
-
 }
 
 .section_part h2 {
@@ -140,15 +141,12 @@ nav {
 }
 
 
-.section_part button{
-  box-shadow: 0 0 0px white,
-  0 0 2px white;
+
+.section_part button {
   font-family: "Marcellus", serif;
   font-size: 2.5rem;
   text-align:center;
   gap: 1rem;
-  /* height: 3rem;
-  width: 15rem; */
   max-width: fit-content;
   border: none;
   border-style: none;
@@ -156,19 +154,17 @@ nav {
   border-radius: 50px;
   background-color: rgba(253, 254, 255, 0.547);
   margin-block: 10 rem;
-  /* outline: none */
-}
-
-.section_part button {
-  position:relative;
-  -webkit-text-fill-color: rgb(111, 111, 111);
-  /* bottom: 9rem;
-  left: 34rem */
-}
-.section_part button {
   margin: auto; 
   color: rgba(255, 255, 255, 0.967);
   border-color: white;
+}
+.section_part button {
+  position:relative;
+  -webkit-text-fill-color: rgb(111, 111, 111);
+}
+.section_part button{
+  box-shadow: 0 0 0px white,
+  0 0 2px white;
 }
 
 .section_part button:hover {
@@ -187,7 +183,6 @@ sidebar
   top: 0;
   right: 0;
   height: 100vh;
-  /* width: 15.625rem; */
   z-index: 999;
   background-color: rgba(72, 83, 110, 0.498);
   backdrop-filter: blur(10px);
@@ -216,3 +211,8 @@ sidebar
   width: 100%;
   margin-left: 1rem;
 } 
+
+.sidebar a:hover{
+  color: rgba(0, 0, 0, 0.795);
+  transition: 0.2s;
+}
