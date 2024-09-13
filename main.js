@@ -1,5 +1,22 @@
+
 type="text/javascript"
+var isOriginalText = true;
 function funcClick(){
   var x = document.getElementById("h_txt");
-  x.innerHTML = "Flower resedence";
+  if(isOriginalText){
+    x.innerHTML = "Flower resedence";
+  } else {
+    x.innerHTML = "THE BEAUTY";
+  }
+  isOriginalText = !isOriginalText;
 }
+
+function showSideBar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSideBar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+// change text
