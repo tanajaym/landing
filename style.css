@@ -80,7 +80,8 @@ nav {
   display: none;
 }
 
-@media (width > 800px) {
+@media (width > 50rem) {
+    /* 50 rem = 800 px */
   .navigations > div li:not(:first-child) {
     display: block;
   }
@@ -94,24 +95,30 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .hideOnMobile{
     display: none;
   }
 }
 
 
-@media (max-width: 62rem) {
-  /*  */
+@media (max-width: 50rem) {
   /* 50 rem = 800 px */
   .sidebar{
     width: 100%;
+    height: 100%;
   }
   .menu-button{
     display: block;
   }
 }
 
+/* @media (max-width: 400px){
+  .section_part h1 {
+    font-size: 1rem;
+  }
+} */
+  
 
 .section_part {
   flex: 1;
@@ -122,6 +129,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .section_part h2 {
@@ -133,8 +141,10 @@ nav {
 
 .section_part h1 {
   margin-bottom: 10rem;
-  font-size: 9rem;
-  font-weight: 500;
+  /* font-size: 9rem; */
+  font-size: clamp(7rem,8vw,9rem);
+  /* for responsive text */
+  font-weight: 50  ;
   color: white;
   -webkit-text-fill-color:transparent;
   -webkit-text-stroke: 2.5px rgba(111, 111, 111, 0.629);

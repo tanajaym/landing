@@ -4,7 +4,7 @@ var isOriginalText = true;
 function funcClick(){
   var x = document.getElementById("h_txt");
   if(isOriginalText){
-    x.innerHTML = "Flower resedence";
+    x.innerHTML = "THE CUTIE";
   } else {
     x.innerHTML = "THE BEAUTY";
   }
