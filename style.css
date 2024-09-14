@@ -101,7 +101,9 @@ nav {
 }
 
 
-@media (max-width: 50rem) {
+@media (max-width: 62rem) {
+  /*  */
+  /* 50 rem = 800 px */
   .sidebar{
     width: 100%;
   }
@@ -182,7 +184,7 @@ sidebar
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100dvh;
   z-index: 999;
   background-color: rgba(72, 83, 110, 0.498);
   backdrop-filter: blur(10px);
@@ -192,8 +194,6 @@ sidebar
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
-
 }
 
 .sidebar a {
